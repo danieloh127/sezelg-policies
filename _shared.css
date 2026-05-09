@@ -1,0 +1,188 @@
+/* 세젤귀 정책 페이지 공용 스타일 — 외부 호스팅용 */
+:root {
+  --bg-base: #fff7d6;
+  --bg-soft: #fffdf3;
+  --accent-pink: #ffd1dc;
+  --accent-mint: #c9f0da;
+  --text-primary: #2a2a2a;
+  --text-secondary: #6b6b6b;
+  --text-tertiary: #9a9a9a;
+  --brand-orange: #c97a3f;
+  --r-md: 16px;
+  --r-pill: 9999px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Pretendard Variable', Pretendard, -apple-system,
+    BlinkMacSystemFont, system-ui, 'Apple SD Gothic Neo', 'Noto Sans KR',
+    'Malgun Gothic', sans-serif;
+  background: var(--bg-base);
+  color: var(--text-primary);
+  line-height: 1.6;
+  min-height: 100vh;
+  padding: 32px 16px 60px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  background: var(--bg-soft);
+  border-radius: 24px;
+  padding: 36px 28px 40px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+header.page-head {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+header.page-head h1 {
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+}
+
+header.page-head .meta {
+  margin-top: 8px;
+  font-size: 12px;
+  color: var(--text-tertiary);
+}
+
+h2 {
+  font-size: 16px;
+  font-weight: 800;
+  margin: 28px 0 8px;
+  letter-spacing: -0.3px;
+}
+
+h2:first-of-type {
+  margin-top: 16px;
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.75;
+  color: var(--text-primary);
+  margin: 6px 0;
+  word-break: keep-all;
+}
+
+ul,
+ol {
+  margin: 8px 0 8px 22px;
+}
+
+li {
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 4px;
+}
+
+strong {
+  font-weight: 700;
+}
+
+em {
+  font-style: normal;
+  color: var(--brand-orange);
+  font-weight: 600;
+}
+
+.callout {
+  background: rgba(201, 122, 63, 0.08);
+  border-radius: var(--r-md);
+  padding: 16px 18px;
+  margin: 16px 0;
+}
+
+.callout p {
+  margin: 0;
+}
+
+.contact-box {
+  background: var(--bg-base);
+  border-radius: var(--r-md);
+  padding: 16px 18px;
+  margin: 16px 0;
+}
+
+.contact-box p {
+  margin: 4px 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 12px 0;
+  font-size: 13px;
+}
+
+th,
+td {
+  padding: 10px 12px;
+  text-align: left;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+th {
+  background: rgba(0, 0, 0, 0.04);
+  font-weight: 700;
+  color: var(--text-secondary);
+  font-size: 12px;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+footer.page-foot {
+  margin-top: 36px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  text-align: center;
+}
+
+footer.page-foot a {
+  display: inline-block;
+  margin: 4px 8px;
+  font-size: 13px;
+  color: var(--brand-orange);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+footer.page-foot .biz {
+  margin-top: 16px;
+  font-size: 11px;
+  color: var(--text-tertiary);
+  line-height: 1.6;
+}
+
+.back {
+  display: inline-block;
+  font-size: 13px;
+  color: var(--text-secondary);
+  text-decoration: none;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+.back::before {
+  content: '← ';
+}
